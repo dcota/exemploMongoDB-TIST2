@@ -1,0 +1,27 @@
+{
+  "name": "exemplomongodb-tist2",
+  "version": "1.0.0",
+  "description": "API ligaçao mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcota/exemploMongoDB-TIST2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcota/exemploMongoDB-TIST2/issues"
+  },
+  "homepage": "https://github.com/dcota/exemploMongoDB-TIST2#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
