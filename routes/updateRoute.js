@@ -17,13 +17,12 @@ router.post('/', (req, res) => {
                fotoUrl: req.body.fotoUrl
             })
             newArduino.save()
-            .then((error, result) => {
-                if(error){
-                    res.json({msg: 'Ocorreu um error'})
-                    throw error
-                }
-                console.log(result)
+            .then(result => {
+                console.log('Objeto criado')
                 res.json({msg: 'Objeto criado'})
+            })
+            .catch(error => {
+                console.log(error)
             })
         }
         else {
