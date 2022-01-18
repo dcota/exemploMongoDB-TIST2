@@ -31,6 +31,9 @@ router.post('/', (req, res) => {
             console.log(result)
         }
     })
+    .catch(error =>{
+        console.log(error)
+    })
 })
 
 module.exports = router
