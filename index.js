@@ -8,6 +8,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json({ extended: false }))
 
+app.use('/create', require('./routes/createRoute'))
 app.use('/update', require('./routes/updateRoute'))
 
 mongoose.connect(process.env.MONGOURI, 

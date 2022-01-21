@@ -6,6 +6,7 @@ const exemplo = mongoose.Schema({
     'temp' : {'type': 'Number'},
     'hum' : {'type': 'Number'},
     'fotoUrl' : {'type': 'String'},
+    'estado': {'type' : 'String'},
     date: {'type': Date, default: Date.now}
 })
 
